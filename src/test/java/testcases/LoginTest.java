@@ -6,7 +6,7 @@ import base.BaseTest;
 import pages.LoginPage;
 import utilities.TestData;
 public class LoginTest extends BaseTest{
-	@Test(priority=2)
+	@Test(priority=2, dependsOnGroups="registration")
 	public void verifyLogin() throws InterruptedException {
 		LoginPage lp=new LoginPage(driver);
 		//lp.login("hema123", "admin123");
