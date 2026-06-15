@@ -10,7 +10,7 @@ public class BillPayPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(linkText="Bill Pay")
+	@FindBy(xpath("//a[contains(text(),'Bill Pay')]")
 	WebElement billPay;
 	@FindBy(name="payee.name")
 	WebElement payeename;
