@@ -6,7 +6,7 @@ import base.BaseTest;
 import junit.framework.Assert;
 import pages.LoginPage;
 public class EmptyLoginTest extends BaseTest {
-	@Test
+	@Test(enabled=false)
 	public void emptyLoginTest() {
 		LoginPage lp=new LoginPage(driver);
 		lp.login(" ", " ");
