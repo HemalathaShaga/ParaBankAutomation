@@ -8,7 +8,7 @@ import pages.RegistrationPage;
 import utilities.TestData;
 import utilities.WaitUtils;
 public class RegistrationTest extends BaseTest {
-	@Test(priority=1)
+	@Test(priority=1, groups="registration")
 	public void verifyUserRegistration() throws InterruptedException{
 		RegistrationPage rp=new RegistrationPage(driver);
 		String generatedUser=rp.registerUser();
